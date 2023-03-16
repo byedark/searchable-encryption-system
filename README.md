@@ -1,7 +1,7 @@
 # searchable_encryption
 ## 该项目前后端分离，前端采用vue后端Django,实现了简单的可搜索加密。
-##服务器采用ngnix和uwsgi进行搭建
-###网站静态文件也需要收集，在站点处配置
+## 服务器采用ngnix和uwsgi进行搭建
+### 网站静态文件也需要收集，在站点处配置
 ```
 location / {
   include uwsgi_params;
@@ -13,8 +13,8 @@ location /static/ {
   alias /www/wwwroot/8.130.40.196/dist/static/; #静态资源路径
 }
 ```
-###收集静态文件命令 python manage.py collectstatic
-###ngnix配置
+### 收集静态文件命令 python manage.py collectstatic
+### ngnix配置
 ```
 location / {
   uwsgi_pass 127.0.0.1:9888;
@@ -65,9 +65,9 @@ location /file {
   }
 }
 ```
-###uwsgi配置
+### uwsgi配置
 ```
-#添加配置选择
+# 添加配置选择
 [uwsgi]
 #配置和nginx连接的socket连接
 socket=0.0.0.0:9888
