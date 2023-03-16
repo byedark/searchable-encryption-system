@@ -1,5 +1,5 @@
 # searchable_encryption
-## 该项目前后端分离，前端采用vue后端Django,实现了简单的可搜索加密。
+该项目前后端分离，前端采用vue后端Django,实现了简单的可搜索加密。
 ## 服务器采用ngnix和uwsgi进行搭建
 ### 网站静态文件也需要收集，在站点处配置
 ```
@@ -87,4 +87,4 @@ pidfile=uwsgi.pid
 #配置uwsgi日志记录
 daemonize=/www/wwwroot/8.130.40.196/uwsgi_01.log
 ```
-###注意uwsgi和socket之间交互的端口和后端http访问url地址的端口不能一样，许多博客上的做法都会导致出现后端请求接收不到，原因是socket端口无法访问。
+### 注意uwsgi和socket之间交互的端口和后端http访问url地址的端口不能一样，许多博客上的做法都会导致出现后端请求接收不到，原因是socket端口无法访问。
