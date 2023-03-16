@@ -1,6 +1,6 @@
 # searchable_encryption
 该项目前后端分离，前端采用vue后端Django,实现了简单的可搜索加密。
-## 服务器采用ngnix和uwsgi进行搭建
+## 使用前需要先将前端文件build成静态dist文件，并配置好Djano的template位置，服务器采用ngnix和uwsgi进行搭建
 ### 网站静态文件也需要收集，在站点处配置
 ```
 location / {
